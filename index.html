@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <p>To do list</p>
+        </header>
+        <main>
+            <p1>Заметки</p1>
+            <div class="noteList" id="noteList">
+                <div class="note">
+                    <button type="button" class="edit-button"></button>
+                    <button type="button" class="hidden-button save-button"></button>
+                    <button type="button" class="hidden-button delete-button"></button>
+                    <div class="note-content">
+                        <span class="note-text">Buy milk</span>
+                        <input type="text" class="edit-input hidden">
+                    </div>
+                </div>                
+            </div>
+        <div class="divZametka">
+            <form class="zametkaForm">
+                <div class="buttonAndArea">
+            <textarea class="area" id="area" placeholder="Введите заметку"> </textarea>
+            <button type="button" id='saveButton'class="saveButton">Нажмите для сохранения</button>
+                </div>
+            </form>
+        </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+    <script src='main.js'></script>
+</html>

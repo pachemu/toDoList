@@ -1,0 +1,88 @@
+.divZametka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    width: 90vw;
+    position: absolute;
+}
+.note-content {
+    word-break: keep-all;
+    overflow: hidden;
+}
+.buttonAndArea {
+    width: min-content;
+}
+.edit-input {
+    overflow: hidden;
+}
+.note-content {
+    position: relative;
+}
+
+
+.edit-input {
+    width: calc(100% - 2px);
+    padding: 0; 
+}
+
+.edit-input:focus {
+    outline: none; 
+    border-color: #ccc; 
+}
+textarea {
+    resize: none;
+}
+.noteList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.note {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(255, 255, 137);
+    float: left;
+    margin: 5px;
+    min-height: 200px;
+    width: 150px;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.hidden-button {
+    opacity: 0; 
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    transition: opacity 0.3s; 
+    
+}
+.hidden {
+    display: none;
+}
+.note:hover .hidden-button {
+    opacity: 1; 
+}
+
+.delete-button {
+    opacity: 50%;
+    display: flex;
+    background: url('icons8-delete.svg');
+}
+.save-button {
+    position: absolute;
+    left: 0;
+    background: url('загрузка.png');
+}
+.edit-button {
+    background: no-repeat ,url("icons8-редактировать.svg");
+
+}
+.edit-button, .save-button, .delete-button {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
